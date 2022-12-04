@@ -1,0 +1,349 @@
+body {
+    line-height: 1.5;
+}
+
+/*this is a universal setting*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*-----------------------------------------------Home/Index---------------------------------------------*/
+
+/*determines how large announcement banner at top is*/
+#info_banner {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/*Font, thickness, size, color, and background of announcement banner*/
+#info_banner th {
+    font-family: "Raleway";
+    font-weight: normal;
+    font-size: 15px;
+    color: #262626;
+    background: #BFACA4;
+}
+
+/*element selector that selects all list items*/
+li,
+a {
+    font-family: "Georgia";
+    font-size: 15px;
+    font-weight: 200;
+    color: #262626;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*general heading specifications- ensures unspecified items follow these rules*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+/*Sets font display settings for the list elements*/
+.nav_links,
+ul {
+    list-style: none;
+}
+
+/*puts all list items on same row and padding to match with logo*/
+.nav_links li {
+    display: inline-block;
+    margin: 0;
+    padding: 0px 20px;
+}
+
+/*create smoother hover over effect*/
+.nav_links li a {
+    transition: all .03s ease 0s;
+}
+
+/*hover effect when element interacts with pointer*/
+.nav_links li a:hover {
+    color: #C5D932;
+}
+
+/*logo image, fullsize width and centered with translateX*/
+.logo {
+    /* margin-left: 80px;*/
+    width: 100px;
+    transform: translateX(-50%);
+}
+
+
+/*spaces out icons and padded to match logo*/
+.icons {
+    word-spacing: 1cm;
+    padding: 0px 20px;
+}
+
+/*Flexbox with column setting for easy use*/
+.flexbox_column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+/*Flexbox with default orientation (row) and center alignment for easy use*/
+.flexbox_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    padding: 30px 30px;
+}
+
+/*First box in index page. They are listed consecutively*/
+.box_1 {
+    flex: 1;
+    margin-top: 150px;
+    margin-left: 80px;
+    margin-right: 50px;
+}
+
+.box_2 {
+    flex: 2;
+    margin-right: 30px;
+}
+
+#coming_soon {
+    text-align: left;
+}
+
+.box_3 {
+    flex: 1;
+    margin-left: 70px;
+}
+
+.box_4 {
+    flex: 1;
+    margin-top: 150px;
+    margin-left: 200px;
+    margin-right: 80px;
+}
+
+/*Button styling including color, padding, centering, font size, etc.*/
+.button {
+    background-color: #00A47B;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: #FFFFFF;
+    border-color: #BFACA4;
+    border: solid;
+    border-width: 1px;
+    color: #735E5A;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.box_5 {
+    flex: 1;
+    padding: 30px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+/*Flexbox container for images next to eachother in rows to be spaced out*/
+.flexbox_container_2 {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexbox_container_2 .item_boxes,
+h3 {
+    text-align: center;
+}
+
+.flexbox_container_2 .item_boxes,
+p {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    height: 150px;
+    background-color: #735E5A;
+    margin: 0;
+    padding: 30px;
+    box-sizing: border-box;
+    padding-left: 200px;
+}
+
+.footer_col {
+    width: 30%;
+    padding: 0 30px;
+}
+
+.footer_col h4 {
+    font-size: 15px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: Calluna;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+
+.footer_col ul li {
+    margin-bottom: 0px;
+    color: #FFFFFF;
+    font-family: Georgia;
+    font-weight: lighter;
+    text-transform: lowercase;
+}
+
+.footer_col ul,
+.footer_col li,
+.footer_col a {
+    margin-bottom: 0px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 200;
+    color: #bbbbbb;
+    display: block;
+}
+
+/*styling for social media icons*/
+.footer_col .social_links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #00A47B;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: all 0.5s ease;
+}
+
+/*Hover effect for social media icons*/
+.footer_col .social_links a:hover {
+    color: #24262b;
+    background-color: #FFFFFF;
+}
+
+.input {
+    padding: 10px 20px;
+}
+
+/*Adds responsiveness to footer*/
+@media(max-width: 767px) {
+    .footer_col {
+        width: 30%;
+        margin-bottom: 30px;
+    }
+}
+
+/*-----------------------------------------------About Page---------------------------------------------*/
+/*Specified Flexboxes on page to better align elements*/
+.flexbox_container .about_box1 {
+    flex: 1;
+    width: 100%;
+}
+
+.flexbox_container .about_box2 {
+    flex: 1;
+    padding: 120px;
+}
+
+.flexbox_container .about_box3 {
+    flex: 1;
+    text-align: left;
+    margin: 150px;
+    margin-top: 70px;
+}
+
+.flexbox_container .about_box4 {
+    flex: 1;
+    width: 100%;
+    margin-right: 120px;
+}
+
+.box3 ul,
+li {
+    text-transform: lowercase;
+    list-style: circle;
+}
+
+/*-----------------------------------------------Contact Page---------------------------------------------*/
+/*styling for phone number listed in contact page*/
+#phone {
+    font-family: block script;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.flexbox_container .contact_box1 #phone {
+    justify-content: center;
+}
+
+.flexbox_container .contact_box1 {
+    flex: 1;
+    margin: 90px;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.flexbox_container .contact_box2 {
+    flex: 1;
+    width: 100%;
+    margin-right: 120px;
+}
+
+/*styling for textbox associated text*/
+#feedback {
+    font-family: block script;
+    font-weight: lighter;
+    justify-content: center;
+}
+
+/*-----------------------------------------------Browse Page---------------------------------------------*/
+/*Flexbox for browse filter display box*/
+.browse_filter {
+    display: flex;
+    border: solid;
+    border-width: 1px;
+    border-color: #BFACA4;
+    justify-content: flex-end;
+}
+
+/*Styling for filter and sort 'buttons' on browse page*/
+.browse_filter #sort,
+#filter {
+    font-family: "Georgia";
+    font-size: 15px;
+    font-weight: 200;
+    color: #735E5A;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: solid;
+    border-width: 1px;
+    border-color: #BFACA4;
+    padding: 20px;
+}
